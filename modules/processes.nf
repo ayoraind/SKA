@@ -24,7 +24,7 @@ process SKA_FASTQ {
         > ${prefix}.log
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
-        ska: \$( echo \$(ska --version 2>&1) | head -n3 | tail -n1 | cut -d':' -f2 )
+        ska: \$( echo \$(ska --version 2>&1) | grep 'Version' | cut -d':' -f2 )
     END_VERSIONS
     """
 
