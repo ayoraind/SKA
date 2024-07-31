@@ -2,7 +2,7 @@ def help_message() {
   log.info """
         Usage:
         The typical command for running the pipeline is as follows:
-        nextflow run main.nf --assemblies "PathToassemblyFile(s)" --output_dir "PathToOutputDir" --sequencing_date "GYYMMDD" 
+        nextflow run main.nf --fastqs "PathToFastqFiles(s)" --output_dir "PathToOutputDir" --sequencing_date "GYYMMDD" 
 
         Mandatory arguments:
          --fastqs	                fastq file(s) you wish to supply as input (e.g., "/MIGE/01_DATA/03_ASSEMBLY/T055-8-G230101_FLYE/*_1.fastq.gz")
