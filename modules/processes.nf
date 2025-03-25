@@ -17,7 +17,7 @@ process SKA_FASTQ {
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta}"
     """
-    ska fastq \\
+    ska fasta \\
         $args \\
         -o $prefix \\
         $fastq \\
